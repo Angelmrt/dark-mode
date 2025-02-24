@@ -11,7 +11,7 @@ export function meta({}: Route.MetaArgs) {
 
 export default function Home() {
   return (
-    <div className="bg-white text-black">
+    <div className="bg-body-bg dark:bg-bodyDARK-bg text-black">
     <Header/>
     <Main/>
     </div>
