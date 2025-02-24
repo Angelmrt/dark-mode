@@ -3,13 +3,31 @@
 @theme {
   --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif,
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --color-card-bg: rgba(235, 243, 254, 1);
+  --color-body-bg: rgba(255, 255, 255, 1);
+  --color-card-h2: rgba(25, 55, 103, 1);
+  --color-card-paragraph: rgba(94, 107, 129, 1);
+  --color-primary: rgba(54, 118, 224, 1);
+  --color-button-bg: rgba(54, 118, 224, 1);
+  --color-button-text: rgba(255, 255, 255, 1);
+  --color-list-bullet: rgba(54, 118, 224, 1);
+  --color-main-header: rgba(19, 21, 26, 1);
+
+  --color-cardDARK-bg: rgba(124, 171, 249, 1);
+  --color-bodyDARK-bg: rgba(18, 18, 18, 1);
+  --color-cardDARK-h2: rgba(19, 21, 26, 1);
+  --color-cardDARK-paragraph: rgba(19, 21, 26, 1);
+  --color-primaryDARK: rgba(124, 171, 249, 1);
+  --color-buttonDARK-bg: rgba(124, 171, 249, 1);
+  --color-buttonDARK-text: rgba(19, 21, 26, 1);
+  --color-listDARK-bullet: rgba(19, 21, 26, 1);
+  --color-mainDARK-header: rgba(251, 251, 252, 1);
+
 }
+
+@custom-variant dark (&:where(.dark, .dark *));
 
 html,
 body {
-  @apply bg-white dark:bg-gray-950;
-
-  @media (prefers-color-scheme: dark) {
-    color-scheme: dark;
-  }
+  @apply bg-gray-100 dark:bg-gray-800 transition-colors duration-300;
 }

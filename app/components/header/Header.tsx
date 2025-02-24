@@ -1,9 +1,9 @@
-import React from 'react'
+import ThemeToggle from  "./ThemeToggle";
 
 function Header() {
   return (
-    <header className="bg-gray-800 text-white p-4">
-      <h1>Hola</h1>
+    <header className="bg-body-bg dark:bg-bodyDARK-bg text-white p-4">
+      <ThemeToggle />
     </header>
   )
 }

@@ -3,8 +3,8 @@ import Card from './Card';
 
 function CardWrapper() {
     return (
-        <div className="flex-1 h-full flex flex-col justify-center bg-gray-200 p-4">
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 w-full">
+        <div className="flex-1 h-full flex flex-col justify-center">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 w-full h-full">
             <Card title="Bio">
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Imperdiet mauris enim...</p>
             </Card>

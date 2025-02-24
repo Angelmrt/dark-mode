@@ -4,15 +4,13 @@ import CardWrapper from './CardWrapper';
 
 function Main() {
   return (
-    <main className="h-screen">
-      <div className="flex flex-row items-stretch justify-center gap-4 p-4 bg-gray-100 h-full">
-        {/* UserPersona ocupa el 40% */}
-        <div className="w-2/5 h-full">
+    <main className="min-h-screen">
+      <div className="flex flex-col md:flex-row items-stretch justify-center bg-body-bg dark:bg-bodyDARK-bg p-5">
+        <div className="w-full md:w-2/5">
           <UserPersona />
         </div>
 
-        {/* CardWrapper ocupa el 60% */}
-        <div className="w-3/5 h-full">
+        <div className="w-full md:w-3/5">
           <CardWrapper />
         </div>
       </div>
